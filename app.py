@@ -8,7 +8,7 @@ app = Flask(__name__)
 def check_mysql_connection():
     try:
         connection = mysql.connector.connect(
-            host='eptest-server.mysql.database.azure.com',
+            host='eptest-server.privatelink.mysql.database.azure.com',
             user='imhryoibrc',
             password='octZaEIfT$QwHu$$',
             database='eptest-database'
