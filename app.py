@@ -14,7 +14,7 @@ def check_mysql_connection():
             database='eptest-database'
         )
         if connection.is_connected():
-            return "Connection to MySQL database was successful!"
+            return "Connection to MySQL database was successful!(%s)" % connection.server_host
     except Error as e:
         return f"Error while connecting to MySQL: {e}"
     finally:
